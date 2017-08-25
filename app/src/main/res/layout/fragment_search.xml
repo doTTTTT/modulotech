@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <variable name="viewModel" type="com.dot.modulotech.views.main.search.SearchViewModel"/>
+    </data>
+    <android.support.percent.PercentRelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/search"
+            app:layout_widthPercent="70%"
+            app:layout_heightPercent="20%">
+
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/searchText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:layout_toRightOf="@id/search"
+            android:text="Search"
+            android:onClick="@{(v) -> viewModel.onClickSearch(v, searchText)}"
+            app:layout_widthPercent="30%"
+            app:layout_heightPercent="20%" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/list"
+            android:layout_below="@id/search"
+            app:layoutManager="LinearLayoutManager"
+            app:layout_widthPercent="100%"
+            app:layout_heightPercent="100%"/>
+    </android.support.percent.PercentRelativeLayout>
+</layout>

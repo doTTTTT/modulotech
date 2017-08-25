@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <variable name="viewModel" type="com.dot.modulotech.views.login.LoginViewModel"/>
+    </data>
+    <android.support.percent.PercentRelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:padding="20dp"
+            android:src="@mipmap/ic_launcher"
+            app:layout_widthPercent="100%"
+            app:layout_heightPercent="40%"/>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/userLoginLayout"
+            android:hint="Login"
+            android:layout_below="@id/logo"
+            app:layout_widthPercent="100%"
+            app:layout_heightPercent="15%">
+
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/userLogin"
+                android:lines="1"
+                android:inputType="textEmailAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/userPasswordLayout"
+            android:hint="Password"
+            android:layout_below="@id/userLoginLayout"
+            app:layout_widthPercent="100%"
+            app:layout_heightPercent="15%">
+
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/userPassword"
+                android:lines="1"
+                android:inputType="textPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.v7.widget.AppCompatButton
+            android:layout_below="@id/userPasswordLayout"
+            android:text="Sign In"
+            android:onClick="@{(v) -> viewModel.onClickLoginIn(v, userLogin, userPassword)}"
+            app:layout_widthPercent="90%"
+            app:layout_heightPercent="20%"
+            app:layout_marginRightPercent="5%"
+            app:layout_marginLeftPercent="5%"
+            app:layout_marginTopPercent="5%"
+            app:layout_marginBottomPercent="5%"/>
+    </android.support.percent.PercentRelativeLayout>
+</layout>

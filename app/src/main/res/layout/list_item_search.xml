@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <data>
+        <variable name="viewModel" type="com.dot.modulotech.views.main.search.ListItemSearchViewModel"/>
+    </data>
+    <TextView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:gravity="center"
+        android:text="@{viewModel.name}"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+    </TextView>
+</layout>

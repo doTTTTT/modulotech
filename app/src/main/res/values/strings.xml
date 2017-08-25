@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">ModuloTech</string>
+    <string name="title_activity_main2">Main2Activity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam elementum non est nec feugiat. Fusce eget egestas nisl. Pellentesque auctor, ex sit amet imperdiet pellentesque, nisl risus facilisis nibh, id dignissim nulla lacus ut nunc. Mauris nisi arcu, euismod ut quam a, accumsan commodo nibh. Phasellus leo lectus, convallis et lacinia id, luctus et turpis. Sed et arcu ut odio tristique venenatis. Etiam sodales eros sit amet efficitur pulvinar. Fusce a nisi vel justo cursus porttitor. Aenean quam orci, viverra tristique ex at, ullamcorper tristique lectus. Vestibulum eget nisi mi. Nunc dignissim mi eu augue tristique, in suscipit nunc fringilla. Nunc placerat egestas orci, at imperdiet neque dictum sed. Nunc pellentesque fringilla dolor. Aliquam lobortis nec odio id pulvinar.
+
+Fusce in sapien sit amet odio aliquam volutpat sed ornare massa. Ut pharetra nisi a pretium blandit. Praesent est ante, facilisis quis nibh in, dignissim tincidunt mauris. Integer iaculis fermentum sapien quis semper. Praesent vestibulum justo sit amet est mollis tempus. Suspendisse nec nulla id eros egestas interdum sit amet non diam. Donec malesuada sem sed lacus porta hendrerit. Cras facilisis sem non erat sodales consectetur ut in augue. In commodo ligula in tristique iaculis. Nullam vel dolor eget felis interdum luctus. Aenean non risus ipsum. Aliquam placerat eu eros vel elementum. Etiam accumsan dolor elit, vitae elementum turpis finibus sit amet. Morbi facilisis at tellus id tempus. Nunc laoreet quam ac augue mollis sodales at vel libero. Vestibulum nisl neque, vulputate ac ultricies feugiat, condimentum vehicula justo.
+
+Duis ac lacus vel velit tempor luctus quis eget sem. Nullam sagittis felis nec nulla dignissim, sit amet congue nisi varius. Suspendisse eget ipsum id sapien varius pulvinar elementum et eros. Proin enim dolor, varius sed dui at, tristique aliquet augue. Nulla facilisi. Cras in arcu id tortor dignissim faucibus ut interdum mi. Nullam eleifend laoreet justo, id venenatis eros facilisis nec. Sed at risus ante.
+
+Ut vitae ultrices erat, eget volutpat mauris. Donec volutpat sollicitudin tempus. Nunc eros nunc, condimentum vel tellus a, auctor malesuada magna. Duis mollis, ligula non porta bibendum, leo enim finibus nulla, ac placerat mauris quam vel mi. Morbi non eros vel felis facilisis congue at eu libero. Mauris mattis sit amet libero quis congue. Curabitur sollicitudin ipsum metus. In hac habitasse platea dictumst. Mauris lacinia metus non felis tempor feugiat. Nulla consequat tempus neque, ac lacinia turpis laoreet non. Nulla facilisi.
+
+Donec mattis mattis fermentum. Quisque blandit augue et sapien consectetur lobortis. Sed ac leo nunc. Fusce vulputate dapibus lectus ut pretium. Aenean malesuada nulla dui, ut pretium velit maximus vitae. In orci orci, accumsan at odio porta, fringilla sagittis nunc. Quisque ac massa sit amet eros dictum gravida. Mauris condimentum dui ac magna egestas aliquam. Praesent sed ligula quis metus venenatis mattis vel in sapien. Sed iaculis tellus at facilisis condimentum. In fermentum, ligula id facilisis convallis, lectus felis fringilla lectus, non porta arcu felis ac nulla. Etiam sodales, velit vitae tempus lacinia, ipsum orci pharetra lacus, a tincidunt orci enim quis elit. Nulla molestie lorem eget convallis bibendum.</string>
+</resources>

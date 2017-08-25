@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <variable name="viewModel" type="com.dot.modulotech.views.main.myprofile.ProfileViewModel"/>
+    </data>
+    <android.support.percent.PercentRelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/userNameLayout"
+            android:layout_width="match_parent"
+            app:layout_heightPercent="20%"
+            android:layout_margin="16dp"
+            app:cardCornerRadius="4dp"
+            app:cardElevation="8dp"
+            app:cardUseCompatPadding="false">
+
+            <android.support.percent.PercentRelativeLayout
+                android:layout_height="match_parent"
+                android:layout_width="match_parent">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/userTitle"
+                    android:gravity="center"
+                    android:text="@{viewModel.title}"
+                    app:layout_widthPercent="30%"
+                    app:layout_heightPercent="100%"
+                    app:layout_marginLeftPercent="5%"/>
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/userFirstName"
+                    android:gravity="center"
+                    android:text="@{viewModel.firstName}"
+                    android:layout_toRightOf="@id/userTitle"
+                    app:layout_widthPercent="30%"
+                    app:layout_heightPercent="100%"/>
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/userLastName"
+                    android:gravity="center"
+                    android:text="@{viewModel.lastName}"
+                    android:layout_toRightOf="@id/userFirstName"
+                    app:layout_widthPercent="30%"
+                    app:layout_heightPercent="100%"
+                    app:layout_marginRightPercent="5%"/>
+            </android.support.percent.PercentRelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/userLocationLayout"
+            android:layout_below="@id/userNameLayout"
+            android:layout_width="match_parent"
+            app:layout_heightPercent="30%"
+            android:layout_margin="16dp"
+            app:cardCornerRadius="4dp"
+            app:cardElevation="8dp"
+            app:cardUseCompatPadding="false">
+
+            <android.support.percent.PercentRelativeLayout
+                android:layout_height="match_parent"
+                android:layout_width="match_parent">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/userStreet"
+                    android:gravity="center"
+                    android:text="@{viewModel.street}"
+                    app:layout_widthPercent="100%"
+                    app:layout_heightPercent="50%"/>
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/userCity"
+                    android:gravity="center"
+                    android:text="@{viewModel.city}"
+                    android:layout_below="@id/userStreet"
+                    app:layout_widthPercent="30%"
+                    app:layout_heightPercent="50%"
+                    app:layout_marginLeftPercent="5%"/>
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/userState"
+                    android:gravity="center"
+                    android:text="@{viewModel.state}"
+                    android:layout_below="@id/userStreet"
+                    android:layout_toRightOf="@id/userCity"
+                    app:layout_widthPercent="30%"
+                    app:layout_heightPercent="50%"/>
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/userZip"
+                    android:gravity="center"
+                    android:text="@{viewModel.zip}"
+                    android:layout_below="@id/userStreet"
+                    android:layout_toRightOf="@id/userState"
+                    app:layout_widthPercent="30%"
+                    app:layout_heightPercent="50%"
+                    app:layout_marginRightPercent="5%"/>
+            </android.support.percent.PercentRelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/userInfo"
+            android:layout_below="@id/userLocationLayout"
+            android:layout_width="match_parent"
+            android:layout_margin="16dp"
+            app:layout_heightPercent="20%"
+            app:cardCornerRadius="4dp"
+            app:cardElevation="8dp"
+            app:cardUseCompatPadding="false">
+
+            <android.support.percent.PercentRelativeLayout
+                android:layout_height="match_parent"
+                android:layout_width="match_parent">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/userEmail"
+                    android:gravity="center"
+                    android:text="@{viewModel.email}"
+                    app:layout_widthPercent="100%"
+                    app:layout_heightPercent="50%"/>
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/userPhone"
+                    android:gravity="center"
+                    android:text="@{viewModel.phone}"
+                    android:textSize="12dp"
+                    android:layout_below="@id/userEmail"
+                    app:layout_marginLeftPercent="5%"
+                    app:layout_widthPercent="30%"
+                    app:layout_heightPercent="50%"/>
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/userCell"
+                    android:gravity="center"
+                    android:text="@{viewModel.cell}"
+                    android:textSize="12dp"
+                    android:layout_toRightOf="@id/userPhone"
+                    android:layout_below="@id/userEmail"
+                    app:layout_widthPercent="30%"
+                    app:layout_heightPercent="50%"
+                    app:layout_marginRightPercent="5%"/>
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/userSSN"
+                    android:gravity="center"
+                    android:text="@{viewModel.SSN}"
+                    android:textSize="12dp"
+                    android:layout_toRightOf="@id/userCell"
+                    android:layout_below="@id/userEmail"
+                    app:layout_widthPercent="30%"
+                    app:layout_heightPercent="50%"
+                    app:layout_marginRightPercent="5%"/>
+            </android.support.percent.PercentRelativeLayout>
+        </android.support.v7.widget.CardView>
+    </android.support.percent.PercentRelativeLayout>
+</layout>
